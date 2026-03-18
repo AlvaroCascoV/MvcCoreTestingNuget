@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="JugadoresNugetACV" Version="1.0.2" />
+    <PackageReference Include="NugetPokemonACV" Version="2.0.0" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,13 @@
+using JugadoresNugetACV.Repositories;
+using NugetPokemonACV.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<RepositoryJugadores>();
+builder.Services.AddTransient<RepositoryPokemon>();
 
 var app = builder.Build();
 

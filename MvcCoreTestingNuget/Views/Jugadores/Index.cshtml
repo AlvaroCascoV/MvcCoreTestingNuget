@@ -1,0 +1,27 @@
+﻿@model List<Jugador>
+<h1>Nuget Jugadores</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numero</th>
+            <th>Nombre</th>
+            <th>Posicion</th>
+            <th>Edad</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Jugador j in Model)
+        {
+            <tr>
+                <td>@j.Numero</td>
+                <td>@j.Nombre</td>
+                <td>@j.Posicion</td>
+                <td>@j.Edad</td>
+                <td>
+                    <img src="@j.Imagen" style="height:100px" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
